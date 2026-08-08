@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta: Batida de Fresa 🍓</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-text">
+        <span class="badge">Receta Refrescante</span>
+        <h1>Batida de Fresa</h1>
+        <p class="subtitulo">Una bebida dulce, fácil y perfecta para cualquier momento del día.</p>
+        
+        <div class="recipe-meta">
+            <div class="meta-item">⏱️ <strong>5 min</strong></div>
+            <div class="meta-item">⚡ <strong>Muy Fácil</strong></div>
+        </div>
+
+        <div class="audio-bar">
+            <span>🎵 Música de ambiente:</span>
+            <audio controls loop src="musica_fondo.mp3" type="audio/mpeg"></audio>
+        </div>
+    </div>
+
+    <div class="hero-media">
+        <div class="image-wrapper">
+            <img src="Batido de fresas.jpeg" alt="Batida de fresa dulce y cremosa" class="hero-image">
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="grid-container">
+        <!-- Columna 1: Ingredientes con Calculadora JS -->
+        <article class="card">
+            <div class="card-header">
+                <h2>Ingredientes</h2>
+                <div class="portion-picker">
+                    <label for="portions">Porciones:</label>
+                    <select id="portions">
+                        <option value="1">1 Vaso</option>
+                        <option value="2">2 Vasos</option>
+                        <option value="4">4 Vasos</option>
+                    </select>
+                </div>
+            </div>
+            <ul class="ingredients-ul" id="ingredients-list">
+                <!-- Se genera dinámicamente con JS -->
+            </ul>
+        </article>
+
+        <!-- Columna 2: Pasos Numerados -->
+        <article class="card">
+            <div class="card-header">
+                <h2>Preparación</h2>
+            </div>
+            <ol class="steps-ol">
+                <li>Lava bien las fresas y retira los tallos verdes.</li>
+                <li>Corta las fresas en trozos pequeños para facilitar el licuado.</li>
+                <li>Coloca las fresas en la licuadora junto con la leche y el azúcar.</li>
+                <li>Añade el hielo (y la vainilla si lo deseas).</li>
+                <li>Licúa durante unos segundos hasta obtener una mezcla suave y cremosa.</li>
+                <li>Sirve de inmediato en un vaso frío y disfruta.</li>
+            </ol>
+        </article>
+    </section>
+
+    <!-- Extra Tip Card -->
+    <section class="tip-card">
+        <div class="tip-icon">💡</div>
+        <div>
+            <h3 style="color: var(--dark-pink); margin-bottom: 5px;">Secretos del Chef</h3>
+            <p>Si buscas una textura ultram cremosa, reemplaza la leche tradicional por <strong>leche evaporada</strong> o suma una cucharada de yogurt natural.</p>
+        </div>
+    </section>
+
+    <!-- Botón Interactivo de Finalización -->
+    <div class="action-area">
+        <button id="finish-btn" class="finish-btn">¡Ya preparé mi batida! 🎉</button>
+        <div id="celebration-message" class="celebration-msg">
+            ¡Salud! 🍓 Disfruta tu deliciosa batida.
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Creado con ❤️ por <strong>Steicy Ferreras V.</strong> &copy; 2025</p>
+</footer>
+
+</body>
+</html>
